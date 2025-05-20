@@ -8,9 +8,11 @@ export default function Footer() {
         {/* Branding & Copyright moved more to the left */}
         <div className="flex flex-col gap-3 min-w-[220px]">
           <div className="flex items-center gap-2 font-bold text-lg text-white mb-2">
-            <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white">
-              <img src="/nova-logo.png" alt="Nova Logo" className="w-10 h-10 object-contain" />
-            </div>
+            <Link href="/" className="flex items-center gap-2">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10">
+                <img src="/nova-logo.png" alt="Nova Logo" className="h-10 w-10 object-contain" />
+              </div>
+            </Link>
           </div>
           <span className="text-xs text-left">2025 Nova E-Commerce. Developed by Rachell Moron. All rights reserved.</span>
         </div>
